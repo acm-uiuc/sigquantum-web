@@ -1,9 +1,13 @@
 import React from "react";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './theme';
 
 const App = () => {
     return (
-        <div>
-        </div>
+        <ThemeProvider theme={theme}>
+            <div>
+            </div>
+        </ThemeProvider>
     );
 };
 
