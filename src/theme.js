@@ -1,10 +1,10 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-const theme = createTheme({
+const original_theme = createTheme({
   palette: {
     // dark blue
     primary: {
-      main: '#233240', 
+      main: '#1a1e24', 
     },
     // light circle blue grey
     secondary: {
@@ -20,10 +20,12 @@ const theme = createTheme({
     },
     // add a background color to the body
     background: {
-      default: '#1a1e24',
+      default: '#233240',
     },
   },
 });
+
+const theme = responsiveFontSizes(original_theme);
 
 export default theme;
 

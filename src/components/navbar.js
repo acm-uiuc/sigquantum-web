@@ -22,7 +22,7 @@ const Navbar = () => {
             style={{ height: 40, marginRight: 10 }}
           />
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'secondary.main' }}>
-            {/* SigQuantum */}
+            SigQuantum
           </Typography>
 
           {isMobile? (
