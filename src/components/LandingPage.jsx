@@ -1,11 +1,14 @@
 import React from 'react';
-import { Grid, Typography, Button, Paper } from '@mui/material';
+import { Grid, Typography, Button, Paper, Card, CardContent } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
+import ScrollDownButton from './about';
+import { Info, ContactSupport } from '@mui/icons-material';
 
 const LandingPage = () => {
   return (
     <ThemeProvider theme={theme}>
+      <div style={{ backgroundColor: theme.palette.background.default, minHeight: '100vh' }}>
       <Grid container direction="column" justifyContent="center" alignItems="center">
         <Grid item>
           <Grid container alignItems="center">
@@ -31,25 +34,94 @@ const LandingPage = () => {
             </Grid>
             <Grid item xs={12} sm={6} order={{ xs: 2, sm: 1 }}>
               <Paper
-                elevation={3}
-                align="centre"
+                elevation={0}
+                align="center"
                 sx={{
                   width: '100%',
-                  xs: {
-                    width: '90vw',
-                  },
-                  height: '60vh',
-                  m: '5% auto', 
-                  borderRadius: "10px",
+                  height: '50vh',
+                  m: '10% auto', 
+                  backgroundColor: theme.palette.background.default,
+                  borderRadius: "50%",
                   overflow: 'hidden',
+                  // make the picture circular
+                  '@media (max-width: 600px)': {
+                    width: '80%',
+                    // marginBottom: '20vh',
+                    borderRadius: "5%",
+                  },
                 }}
               >
-                <img src="../SigQuantumPoster.png" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="SigQuantum Poster" />
+                <img src="../meeting.png" style={{ width: '100%', height: '100%', objectFit:'cover' }} />
               </Paper>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
+
+      
+      <div style={{ margin: 'auto', textAlign: 'center', bottom:'0px'}}>
+        <ScrollDownButton target={"about"}/>
+      </div>
+
+      <div id="about">
+      <Grid container spacing={3} justifyContent="center" alignItems="center" 
+          sx={{ margin: '5% auto', maxWidth: '80vw', objectFit:'scale-down',
+          '@media (max-width: 720px)': {
+            flexDirection: 'column',
+            width: '100%',
+          } }}>
+        <Grid item xs={12} sm={6}>
+          <Card
+            sx={{
+              backgroundImage: `url(${'../ket.png'})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'left',
+              backgroundRepeat: 'no-repeat',
+              backgroundColor: theme.palette.primary.main,
+              color: theme.palette.secondary.main,
+              position: 'relative',
+              overflow: 'hidden',
+              alignItems: 'left',
+            }}
+          >
+            <CardContent>
+              <Typography variant="h4" align="left">
+                About SigQuantum
+              </Typography>
+              <Typography variant="body1" align='left'>
+                {"aksjbcfkdbsvlcjabdsvlkbdakslvbabvjfwgege akjgkejnviewjnv egfjewgvwejvrw weogivjwoegoweov erwgvegv"}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Card
+            sx={{
+              backgroundImage: `url(${'../bra.png'})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'right',
+              backgroundRepeat: 'no-repeat',
+              backgroundColor: theme.palette.primary.main,
+              color: theme.palette.secondary.main,
+              position: 'relative',
+              overflow: 'hidden',
+              alignItems: 'right',
+            }}
+          >
+            <CardContent>
+              <Typography variant="h4" align="right">
+                About SigQuantum
+              </Typography>
+              <Typography variant="body1" align='right'>
+                {"aksjbcfkdbsvlcjabdsvlkbdakslvbabvjfwgege akjgkejnviewjnv egfjewgvwejvrw weogivjwoegoweov erwgvegv"}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+      </div>
+
+      </div>
     </ThemeProvider>
   );
 };
