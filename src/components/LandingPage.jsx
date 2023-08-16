@@ -43,10 +43,8 @@ const LandingPage = () => {
                   backgroundColor: theme.palette.background.default,
                   borderRadius: "50%",
                   overflow: 'hidden',
-                  // make the picture circular
                   '@media (max-width: 600px)': {
                     width: '80%',
-                    // marginBottom: '20vh',
                     borderRadius: "5%",
                   },
                 }}
@@ -65,7 +63,7 @@ const LandingPage = () => {
 
       <div id="about">
       <Grid container spacing={3} justifyContent="center" alignItems="center" 
-          sx={{ margin: '5% auto', maxWidth: '80vw', objectFit:'scale-down',
+          sx={{ margin: '5% auto', maxWidth: '90vw', objectFit:'scale-down',
           '@media (max-width: 720px)': {
             flexDirection: 'column',
             width: '100%',
@@ -75,7 +73,9 @@ const LandingPage = () => {
             sx={{
               backgroundImage: `url(${'../ket.png'})`,
               backgroundSize: 'cover',
+              objectFit:'scale-down',
               backgroundPosition: 'left',
+              // height: '70vh',
               backgroundRepeat: 'no-repeat',
               backgroundColor: theme.palette.primary.main,
               color: theme.palette.secondary.main,
@@ -88,8 +88,8 @@ const LandingPage = () => {
               <Typography variant="h4" align="left">
                 About SigQuantum
               </Typography>
-              <Typography variant="body1" align='left'>
-                {"aksjbcfkdbsvlcjabdsvlkbdakslvbabvjfwgege akjgkejnviewjnv egfjewgvwejvrw weogivjwoegoweov erwgvegv"}
+              <Typography variant="body1" align='left' paddingRight={'20%'}>
+                {"SigQuantum is the UIUC ACM chapter of the Quantum Computing Special Interest group. We are a student run organization that aims to teach students various concepts of quantum computing and quantum physics in general through presentations, demos, discussions, research and hackathons. We are a beginner friendly club and aim to spread more interest and knowledge in the field of quantum computing. Grauduate students, research paper discussions and professor presentations are a few ways how we expand this learning base."}
               </Typography>
             </CardContent>
           </Card>
@@ -99,6 +99,8 @@ const LandingPage = () => {
             sx={{
               backgroundImage: `url(${'../bra.png'})`,
               backgroundSize: 'cover',
+              objectFit:'scale-down',
+              // height: '70vh',
               backgroundPosition: 'right',
               backgroundRepeat: 'no-repeat',
               backgroundColor: theme.palette.primary.main,
@@ -113,7 +115,7 @@ const LandingPage = () => {
                 About SigQuantum
               </Typography>
               <Typography variant="body1" align='right'>
-                {"aksjbcfkdbsvlcjabdsvlkbdakslvbabvjfwgege akjgkejnviewjnv egfjewgvwejvrw weogivjwoegoweov erwgvegv"}
+                {""}
               </Typography>
             </CardContent>
           </Card>

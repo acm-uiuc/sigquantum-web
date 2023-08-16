@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
       <div className={classes.fabContainer}>
 
         <img
-          src="../open-the-box.gif" 
+          src="../open-the-box-unscreen.gif" 
           alt="Schrödinger's Cat"
           className={classes.gif}
         />
