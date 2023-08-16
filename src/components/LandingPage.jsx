@@ -1,9 +1,8 @@
 import React from 'react';
-import { Grid, Typography, Button, Paper, Card, CardContent } from '@mui/material';
+import { Grid, Typography, Button, Paper, Card, CardContent, ListItem } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import ScrollDownButton from './about';
-import { Info, ContactSupport } from '@mui/icons-material';
 
 const LandingPage = () => {
   return (
@@ -11,7 +10,11 @@ const LandingPage = () => {
       <div style={{ backgroundColor: theme.palette.background.default, minHeight: '100vh' }}>
       <Grid container direction="column" justifyContent="center" alignItems="center">
         <Grid item>
-          <Grid container alignItems="center">
+          <Grid container alignItems="center"  sx={{'@media (max-width: 900px)': {
+                    flexDirection: 'column',
+                    width: '100vw',
+                    alignItems: 'center',
+                  }}}>
             <Grid item xs={12} sm={6} order={{ xs: 1, sm: 2 }}>
               <Typography variant="h1" align="center" style={{ color: theme.palette.tertiary.main, margin: 'auto' }}>
                 SigQuantum
@@ -43,9 +46,10 @@ const LandingPage = () => {
                   backgroundColor: theme.palette.background.default,
                   borderRadius: "50%",
                   overflow: 'hidden',
-                  '@media (max-width: 600px)': {
+                  '@media (max-width: 900px)': {
                     width: '80%',
                     borderRadius: "5%",
+
                   },
                 }}
               >
@@ -63,19 +67,19 @@ const LandingPage = () => {
 
       <div id="about">
       <Grid container spacing={3} justifyContent="center" alignItems="center" 
-          sx={{ margin: '5% auto', maxWidth: '90vw', objectFit:'scale-down',
-          '@media (max-width: 720px)': {
+          sx={{ margin: '5% auto', maxWidth: '90vw', objectFit:'scale-down', width: '100%',
+          '@media (max-width: 900px)': {
             flexDirection: 'column',
             width: '100%',
+            maxWidth: '100vw',
+            margin: '0 0',
           } }}>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={9} md={6}>
           <Card
             sx={{
               backgroundImage: `url(${'../ket.png'})`,
               backgroundSize: 'cover',
-              objectFit:'scale-down',
               backgroundPosition: 'left',
-              // height: '70vh',
               backgroundRepeat: 'no-repeat',
               backgroundColor: theme.palette.primary.main,
               color: theme.palette.secondary.main,
@@ -86,21 +90,19 @@ const LandingPage = () => {
           >
             <CardContent>
               <Typography variant="h4" align="left">
-                About SigQuantum
+                Who are we?
               </Typography>
               <Typography variant="body1" align='left' paddingRight={'20%'}>
-                {"SigQuantum is the UIUC ACM chapter of the Quantum Computing Special Interest group. We are a student run organization that aims to teach students various concepts of quantum computing and quantum physics in general through presentations, demos, discussions, research and hackathons. We are a beginner friendly club and aim to spread more interest and knowledge in the field of quantum computing. Grauduate students, research paper discussions and professor presentations are a few ways how we expand this learning base."}
+                {"SigQuantum is the UIUC ACM chapter of the Quantum Computing Special Interest group. We are a beginner-friendly student run organization that aims to spread interest and knowledge in the field of quantum computing. Our meetings are open to anyone, with any given background, and we encourage anyone interested to join us!"}
               </Typography>
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={9} md={6}>
           <Card
             sx={{
               backgroundImage: `url(${'../bra.png'})`,
               backgroundSize: 'cover',
-              objectFit:'scale-down',
-              // height: '70vh',
               backgroundPosition: 'right',
               backgroundRepeat: 'no-repeat',
               backgroundColor: theme.palette.primary.main,
@@ -111,12 +113,13 @@ const LandingPage = () => {
             }}
           >
             <CardContent>
-              <Typography variant="h4" align="right">
-                About SigQuantum
+              <Typography variant="h4" align="right" paddingLeft={'20%'}>
+                What do we do?
               </Typography>
-              <Typography variant="body1" align='right'>
-                {""}
-              </Typography>
+                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Research paper discussions</Typography>
+                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Code and quantum circuit demos</Typography>
+                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Professor guest lectures and grad student presentations</Typography>
+                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Quantum & Tea social meetings with open-ended discussions</Typography>
             </CardContent>
           </Card>
         </Grid>
