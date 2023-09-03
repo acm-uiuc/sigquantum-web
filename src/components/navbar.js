@@ -28,7 +28,7 @@ const Navbar = () => {
           {isMobile? (
             <>
             <Hidden mdUp implementation="css">
-              <Button edge="end" color="primary" aria-label="menu" onClick={toggleDrawer} >
+              <Button edge="end" color="primary" aria-label="menu" onClick={toggleDrawer} fontFamily={'roboto'}>
                 <MenuIcon sx={{ color: 'secondary.main' }}/>
               </Button>
               </Hidden>
