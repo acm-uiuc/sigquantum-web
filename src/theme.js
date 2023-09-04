@@ -1,4 +1,5 @@
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import './index.css'
 
 const original_theme = createTheme({
   palette: {
@@ -27,6 +28,9 @@ const original_theme = createTheme({
       default: '#233240',
       main: '#1f4c63',
     },
+  },
+  typography: {
+    fontFamily: 'viga, sans-serif',
   },
 });
 

@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
         />
         <Fab className={classes.fab} color="primary" onClick={handleScrollDown} variant="extended">
           {/* <KeyboardArrowDownIcon /> */}
-        <Typography variant="inherit" color="secondary" fontFamily={'roboto'}>OPEN THE BOX</Typography>
+        <Typography variant="inherit" color="secondary">OPEN THE BOX</Typography>
         </Fab>
       </div>
     );
