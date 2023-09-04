@@ -3,11 +3,13 @@ import { Grid, Typography, Button, Paper, Card, CardContent, ListItem } from '@m
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import ScrollDownButton from './about';
+import '../index.css'
+
 
 const LandingPage = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div style={{ backgroundColor: theme.palette.background.default, minHeight: '100vh' }}>
+      <div style={{ backgroundColor: theme.palette.background.default, minHeight: '100vh', backgroundImage: 'url("../public/SigQuantum_Shapes_v1.0.svg")',}}>
       <Grid container direction="column" justifyContent="center" alignItems="center">
         <Grid item>
           <Grid container alignItems="center"  sx={{'@media (max-width: 900px)': {
@@ -16,23 +18,26 @@ const LandingPage = () => {
                     alignItems: 'center',
                   }}}>
             <Grid item xs={12} sm={6} order={{ xs: 1, sm: 2 }}>
-              <Typography variant="h1" align="center" style={{ color: theme.palette.tertiary.main, margin: 'auto' }}>
+              <Typography variant="h1" align="center" style={{ color: theme.palette.tertiary.main2, margin: 'auto'}}>
                 SigQuantum
               </Typography>
-              <Typography variant="body1" align="center" style={{ color: theme.palette.secondary.main, width: "100%", maxWidth: '30rem', margin: '0 auto' }}>
+              <Typography variant="h4" align="center"style={{ color: theme.palette.secondary.main, width: "100%", maxWidth: '30rem', margin: '0 auto'}}>
                 We are SigQuantum, ACM's Special Interest Group(SIG) for quantum computing and
                 quantum physics and mechanics related applications.
               </Typography>
               <Button
               variant="contained"
-              color="tertiary"
               component="a"
+              align="center"
               href="https://discord.gg/RzGFsacTgR"
               target="_blank"
               rel="noopener noreferrer"
-                style={{ margin: '5% 40%' }}
+                style={{ margin: '5% 40%', 
+                backgroundColor: theme.palette.tertiary.main2,
+              fontWeight: 'bold',
+            fontSize: '1.3rem', }}
               >
-                Join our Discord    
+                Join Us   
               </Button>
             </Grid>
             <Grid item xs={12} sm={6} order={{ xs: 2, sm: 1 }}>
@@ -46,10 +51,17 @@ const LandingPage = () => {
                   backgroundColor: theme.palette.background.default,
                   borderRadius: "50%",
                   overflow: 'hidden',
+                  borderColor: "#f1b65f",
+                  // borderColor: theme.palette.tertiary.main,
+                  borderWidth: "5px",
+                  borderStyle: "solid",
+                  
                   '@media (max-width: 900px)': {
                     width: '80%',
                     borderRadius: "5%",
-
+                    borderColor: "#f1b65f",
+                    borderWidth: "5px",
+                    borderStyle: "solid",
                   },
                 }}
               >
@@ -116,10 +128,10 @@ const LandingPage = () => {
               <Typography variant="h4" align="right" paddingLeft={'20%'}>
                 What do we do?
               </Typography>
-                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Research paper discussions</Typography>
-                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Code and quantum circuit demos</Typography>
-                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Professor guest lectures and grad student presentations</Typography>
-                <Typography variant="body1" align="right" paddingLeft={'20%'}>- Quantum & Tea social meetings with open-ended discussions</Typography>
+                <Typography align="right" paddingLeft={'20%'}>- Research paper discussions</Typography>
+                <Typography align="right" paddingLeft={'20%'}>- Code and quantum circuit demos</Typography>
+                <Typography align="right" paddingLeft={'20%'}>- Professor guest lectures and grad student presentations</Typography>
+                <Typography align="right" paddingLeft={'20%'}>- Quantum & Tea social meetings with open-ended discussions</Typography>
             </CardContent>
           </Card>
         </Grid>
