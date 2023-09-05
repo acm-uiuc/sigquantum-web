@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.dba6c510.css","mappings":"AAAA,WACI,gBAAmB,CAGnB,iBAAkB,CADlB,eAAmB,CADnB,iFAGF","sources":["index.css"],"sourcesContent":["@font-face {\r\n    font-family: 'viga'; \r\n    src: url('/public/Viga/Viga-Regular.ttf') format('sans-serif'); \r\n    font-weight: normal;\r\n    font-style: normal;\r\n  }"],"names":[],"sourceRoot":""}
