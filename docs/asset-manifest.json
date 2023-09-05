@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dba6c510.css",
+    "main.js": "/static/js/main.d9613b76.js",
+    "static/media/Viga-Regular.ttf": "/static/media/Viga-Regular.bbfc6c11ed52e7e82c92.ttf",
+    "index.html": "/index.html",
+    "main.dba6c510.css.map": "/static/css/main.dba6c510.css.map",
+    "main.d9613b76.js.map": "/static/js/main.d9613b76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dba6c510.css",
+    "static/js/main.d9613b76.js"
+  ]
+}
