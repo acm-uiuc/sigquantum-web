@@ -9,7 +9,7 @@ import SvgIcon from '@components/SvgIcon.astro'
             <img class="header__logo-img" src="/assets/logo.svg" alt="SIGQuantum logo" />
         </a>
     </div>
-    <div class="header__meta flex-1">
+    <div class="header__meta flex-1 content-center">
         <h3 class="header__title dark:text-theme-dark-secondary">
             <a href="/">{ SITE.name }</a>
         </h3>
@@ -26,7 +26,7 @@ import SvgIcon from '@components/SvgIcon.astro'
         @apply flex gap-4 border-b py-3 /* border-gray-200 dark:border-gray-700 - check styles/global.css */
     }
     .header__logo-img {
-        @apply w-16 h-16 rounded-full overflow-hidden
+        @apply w-32 h-32 rounded-full overflow-hidden
     }
     .header__title {
         @apply text-4xl font-extrabold md:text-5xl
