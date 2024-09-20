@@ -1,0 +1,13 @@
+---
+import DefaultPageLayout from '@layouts/Default.astro';
+import Prose from '@components/Prose.astro';
+
+const { title } = Astro.props;
+const description = 'Pardon our dust!';
+---
+
+<DefaultPageLayout content={{ title, description }}>
+            <Prose>
+            This page isn't currently available, but it will be soon. Check back later!
+            </Prose>
+</DefaultPageLayout>
