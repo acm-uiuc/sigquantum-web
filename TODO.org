@@ -1,0 +1,26 @@
+See the [[https://www.notion.so/invite/3a75b0d8a21bfebf314b8eef72b42574766144e3][Notion]] for event planning.
+
+* Content
+** Invited speakers
+** Logistics
+- Date
+- Time
+*** Events
+- Lectures
+- SIGQuantum meetings
+- hackathon
+** TODO Registration
+Google form
+
+* Infra
+** DONE CI/CD
+** DNS
+*** DONE labescape.com
+@shorden is registrant
+*** TODO https://quantum.acm.illinois.edu/
+Ask ACM infra folks
+
+** Astro
+*** TODO Styling/theme
+- https://daisyui.com/components/
+
