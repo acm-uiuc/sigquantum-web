@@ -1,10 +1,21 @@
 ---
 import DefaultPageLayout from '@layouts/Default.astro';
+import { randomXkcd } from '@src/utils';
 
-const title = '404 - Page not found';
-const description = 'The page you are looking for does not exist.';
+const title = '404';
+const description = 'Page not found';
+const xkcd = randomXkcd();
 ---
 
 <DefaultPageLayout content={{ title, description }}>
-    Oops! Better call a quantum mechanic.
+  The page you tried to access isn't a valid basis state; better call a quantum mechanic.
+
+  <div class="flex">
+    <div class="m-auto p-20">
+      <a href={xkcd.href}>
+        <img class="justify-center" src={xkcd.src} alt={"XKCD: " + xkcd.name} />
+      </a>
+    </div>
+  </div>
+
 </DefaultPageLayout>
