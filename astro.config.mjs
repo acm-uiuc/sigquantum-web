@@ -11,8 +11,9 @@ export default defineConfig({
     // adapter: cloudflare({
     //     imageService: 'cloudflare'
     // }),
+    trailingSlash: 'always', // cloudflare always adds a trailing slash
     redirects: {
-        "/discord": {
+        "/discord/": {
             "status": 302,
             "destination": "https://discord.gg/bZHpPq2Kch"
         },

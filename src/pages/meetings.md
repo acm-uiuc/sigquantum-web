@@ -35,7 +35,7 @@ Note that we usually do not record blackboard seminars, paper reading groups, et
 ## Week 8: Quantum Error Correction
 [Slides](https://docs.google.com/presentation/d/1wsEWXEy4gOyXDGfOYJGuArHmgbqSS8OZ/edit?usp=sharing&ouid=116051307180434410906&rtpof=true&sd=true)
 
-## Week 7: Bruno Abreu
+## Week 7: Bruno Abreu, "Quantum Computing at NCSA"
 [Recording](https://drive.google.com/file/d/1atk7QV1GqPTe7bMVw6PROIpB-hlfdjOC/view?usp=sharing)
 
 ## Week 6: Quantum Teleportation, Entanglement Theory, Quantum Money
